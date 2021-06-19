@@ -16,6 +16,7 @@ class TestSwiftViewController: UIViewController {
         view.backgroundColor = .red
         
         testBlock = { [weak self] in
+            //关键代码 if let strongSelf = self
             if let strongSelf = self {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         strongSelf.test()
@@ -36,9 +37,7 @@ class TestSwiftViewController: UIViewController {
         
         navigationController?.dismiss(animated: false, completion: nil)
       
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {[weak self] in
-            self?.testBlock()
-        }
+        self.testBlock()
     }
 
 }

@@ -43,6 +43,7 @@
     NSLog(@"strongself生效了-----");
 }
 
+//模拟__strong 的使用场景.dissmiss 之后 block 内部延迟 2 秒.  如果不适用__strong. self = nil.  加上了之后才会方法调用成功
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self.navigationController dismissViewControllerAnimated:false completion:nil];
