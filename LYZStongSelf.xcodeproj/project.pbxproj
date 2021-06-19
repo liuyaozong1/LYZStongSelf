@@ -18,6 +18,7 @@
 		B18A1E26267DB9FD007D69DA /* LYZStongSelfUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A1E25267DB9FD007D69DA /* LYZStongSelfUITests.m */; };
 		B18A1E35267DBA13007D69DA /* Nav1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A1E34267DBA13007D69DA /* Nav1ViewController.m */; };
 		B18A1E38267DBA68007D69DA /* Nav2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A1E37267DBA68007D69DA /* Nav2ViewController.m */; };
+		B18A1E3B267DC39B007D69DA /* TestSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18A1E3A267DC39B007D69DA /* TestSwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		B18A1E34267DBA13007D69DA /* Nav1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nav1ViewController.m; sourceTree = "<group>"; };
 		B18A1E36267DBA68007D69DA /* Nav2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nav2ViewController.h; sourceTree = "<group>"; };
 		B18A1E37267DBA68007D69DA /* Nav2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nav2ViewController.m; sourceTree = "<group>"; };
+		B18A1E39267DC39A007D69DA /* LYZStongSelf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LYZStongSelf-Bridging-Header.h"; sourceTree = "<group>"; };
+		B18A1E3A267DC39B007D69DA /* TestSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 				B18A1E34267DBA13007D69DA /* Nav1ViewController.m */,
 				B18A1E36267DBA68007D69DA /* Nav2ViewController.h */,
 				B18A1E37267DBA68007D69DA /* Nav2ViewController.m */,
+				B18A1E3A267DC39B007D69DA /* TestSwiftViewController.swift */,
+				B18A1E39267DC39A007D69DA /* LYZStongSelf-Bridging-Header.h */,
 			);
 			path = LYZStongSelf;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				TargetAttributes = {
 					B18A1DFA267DB9FA007D69DA = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					B18A1E15267DB9FC007D69DA = {
 						CreatedOnToolsVersion = 12.5;
@@ -279,6 +285,7 @@
 				B18A1E06267DB9FA007D69DA /* ViewController.m in Sources */,
 				B18A1E00267DB9FA007D69DA /* AppDelegate.m in Sources */,
 				B18A1E11267DB9FC007D69DA /* main.m in Sources */,
+				B18A1E3B267DC39B007D69DA /* TestSwiftViewController.swift in Sources */,
 				B18A1E38267DBA68007D69DA /* Nav2ViewController.m in Sources */,
 				B18A1E03267DB9FA007D69DA /* SceneDelegate.m in Sources */,
 				B18A1E35267DBA13007D69DA /* Nav1ViewController.m in Sources */,
@@ -453,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XKTT6NGLD;
 				INFOPLIST_FILE = LYZStongSelf/Info.plist;
@@ -462,6 +470,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zy.com.LYZStongSelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LYZStongSelf/LYZStongSelf-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -471,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XKTT6NGLD;
 				INFOPLIST_FILE = LYZStongSelf/Info.plist;
@@ -480,6 +492,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = zy.com.LYZStongSelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LYZStongSelf/LYZStongSelf-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -487,6 +501,7 @@
 		B18A1E2E267DB9FD007D69DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XKTT6NGLD;
@@ -507,6 +522,7 @@
 		B18A1E2F267DB9FD007D69DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XKTT6NGLD;
@@ -527,6 +543,7 @@
 		B18A1E31267DB9FD007D69DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XKTT6NGLD;
 				INFOPLIST_FILE = LYZStongSelfUITests/Info.plist;
@@ -545,6 +562,7 @@
 		B18A1E32267DB9FD007D69DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6XKTT6NGLD;
 				INFOPLIST_FILE = LYZStongSelfUITests/Info.plist;

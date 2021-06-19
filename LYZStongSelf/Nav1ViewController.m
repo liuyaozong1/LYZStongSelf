@@ -26,8 +26,9 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
     __weak typeof(self) weakself = self;
+    __block  NSInteger index = 0;
     self.testBlock = ^{
-
+        index ++;
         //相当于声明一个局部的strong对象,等于当前对象.可以保证block调用的时候,内部的对象不会释放
         __strong typeof(self) strongself = weakself;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -35,6 +36,7 @@
         });
 
     };
+    NSLog(@"index = %ld",index);
 }
 
 -(void)test {
