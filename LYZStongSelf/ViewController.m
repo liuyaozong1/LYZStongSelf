@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import "Nav1ViewController.h"
 @interface ViewController ()
 
 @end
@@ -15,7 +15,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor yellowColor];
+
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    Nav1ViewController *vc = [[Nav1ViewController alloc] init];
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:navc animated:YES completion:nil];
 }
 
 

@@ -16,6 +16,8 @@
 		B18A1E11267DB9FC007D69DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A1E10267DB9FC007D69DA /* main.m */; };
 		B18A1E1B267DB9FD007D69DA /* LYZStongSelfTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A1E1A267DB9FD007D69DA /* LYZStongSelfTests.m */; };
 		B18A1E26267DB9FD007D69DA /* LYZStongSelfUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A1E25267DB9FD007D69DA /* LYZStongSelfUITests.m */; };
+		B18A1E35267DBA13007D69DA /* Nav1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A1E34267DBA13007D69DA /* Nav1ViewController.m */; };
+		B18A1E38267DBA68007D69DA /* Nav2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18A1E37267DBA68007D69DA /* Nav2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		B18A1E21267DB9FD007D69DA /* LYZStongSelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYZStongSelfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18A1E25267DB9FD007D69DA /* LYZStongSelfUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYZStongSelfUITests.m; sourceTree = "<group>"; };
 		B18A1E27267DB9FD007D69DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B18A1E33267DBA13007D69DA /* Nav1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nav1ViewController.h; sourceTree = "<group>"; };
+		B18A1E34267DBA13007D69DA /* Nav1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nav1ViewController.m; sourceTree = "<group>"; };
+		B18A1E36267DBA68007D69DA /* Nav2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nav2ViewController.h; sourceTree = "<group>"; };
+		B18A1E37267DBA68007D69DA /* Nav2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nav2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				B18A1E0C267DB9FC007D69DA /* LaunchScreen.storyboard */,
 				B18A1E0F267DB9FC007D69DA /* Info.plist */,
 				B18A1E10267DB9FC007D69DA /* main.m */,
+				B18A1E33267DBA13007D69DA /* Nav1ViewController.h */,
+				B18A1E34267DBA13007D69DA /* Nav1ViewController.m */,
+				B18A1E36267DBA68007D69DA /* Nav2ViewController.h */,
+				B18A1E37267DBA68007D69DA /* Nav2ViewController.m */,
 			);
 			path = LYZStongSelf;
 			sourceTree = "<group>";
@@ -269,7 +279,9 @@
 				B18A1E06267DB9FA007D69DA /* ViewController.m in Sources */,
 				B18A1E00267DB9FA007D69DA /* AppDelegate.m in Sources */,
 				B18A1E11267DB9FC007D69DA /* main.m in Sources */,
+				B18A1E38267DBA68007D69DA /* Nav2ViewController.m in Sources */,
 				B18A1E03267DB9FA007D69DA /* SceneDelegate.m in Sources */,
+				B18A1E35267DBA13007D69DA /* Nav1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
